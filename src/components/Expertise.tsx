@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 interface ExpertiseCard {
   id: number;
   title: string;
@@ -105,7 +107,7 @@ const Expertise = () => {
 
         {/* Grille des expertises */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {expertiseItems.map((item, index) => (
+          {expertiseItems.map((item) => (
             <div
               key={item.id}
               className="group bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-8 hover:bg-opacity-20 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl border border-white border-opacity-20"
